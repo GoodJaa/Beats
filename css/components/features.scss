@@ -1,0 +1,33 @@
+.features__container {
+    width: 1000px;
+}
+
+.features {
+    display: flex;
+}
+
+.features__item {
+    flex: 1;
+    padding: 0 2%;
+    position: relative;
+
+    &::before {
+        content: url('../img/icons/circles.svg');
+        position: absolute;
+        top: 50px;
+        right: 0;
+        transform: translate(50%);
+    }
+
+    &:first-child {
+        padding-left: 0px;
+    }
+
+    &:last-child {
+        padding-right: 0px;
+
+        &::before {
+            display: none;
+        }
+    }
+}

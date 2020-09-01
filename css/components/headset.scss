@@ -1,0 +1,15 @@
+
+
+.headset__img {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    overflow: hidden;
+
+
+    &-elem {
+        height: 100%;
+        width: 100%;
+        object-fit: fill;
+    }
+}

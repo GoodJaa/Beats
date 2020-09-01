@@ -1,0 +1,15 @@
+.reviews-section {
+    position: relative;
+
+    &::before {
+        @include decorElem;
+        width: 0;
+        height: 0;
+        transform: translateY(76%);
+        left: 24%;
+        width: 34px;
+        height: 34px;
+        border-radius: 50%;
+        background: #999999;
+    }
+}

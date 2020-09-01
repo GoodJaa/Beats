@@ -1,0 +1,47 @@
+$containerWidth: 940px;
+$baseFontSize: 16px;
+
+//colors
+
+$red: #e01f3d;
+$gray: #f5f5f5;
+
+//mixins
+
+@mixin decorElem {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+}
+
+//z-index
+
+$z-fixed-menu: 100;
+
+//setups
+
+@import url("https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap");
+@import "components/layout.scss";
+
+//components
+
+@import "components/hero.scss";
+@import "components/header.scss";
+@import "components/advantages.scss";
+@import "components/advantage.scss";
+@import "components/btn.scss";
+@import "components/section.scss";
+@import "components/headline.scss";
+@import "components/features-section.scss";
+@import "components/features.scss";
+@import "components/feature.scss";
+@import "components/headset.scss";
+@import "components/preview.scss";
+@import "components/reviews-section.scss";
+@import "components/reviews.scss";
+@import "components/interactive-avatar.scss";
+@import "components/form.scss";
+@import "components/delivery-section.scss";
+@import "components/radio.scss";
+@import "components/fixed-menu.scss";

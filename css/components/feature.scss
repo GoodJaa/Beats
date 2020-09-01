@@ -1,0 +1,31 @@
+.feature {
+    text-align: center;
+}
+
+.feature__icon-wrapper {
+    display: inline-flex;
+    width: 126px;
+    height: 126px;
+    background: $gray;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 28px;
+}
+
+.feature__icon {
+    height: 66px;
+    width: 56px;
+    display: flex;
+    align-items: center;;
+}
+
+.feature__title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.feature__desc {
+    color: #666666;
+    padding: 0 1px;
+}
