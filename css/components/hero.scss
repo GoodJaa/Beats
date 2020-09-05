@@ -5,34 +5,6 @@
     color: #000000;
     display: flex;
     align-items: center;
-    position: relative;
-
-    &:before {
-        content: '';
-        position: absolute;
-        top: 20%;
-        right: 10%;
-        display: block;
-        background: url(../img/content/mx-452.png) center center / contain no-repeat;
-        width: rem(500px);
-        height: rem(500px);
-        border-radius: 50%;
-
-        @include tablets {
-            display: none;
-        }
-    }
-
-    // @include tablets {
-    //     width: rem(350px);
-    //     height: rem(350px);
-    //     margin-bottom: rem(25px);
-    // }
-
-    // @include phones {
-    //     width: rem(323px);
-    //     height: rem(323px);
-    // }
 }
 
 .hero__container {

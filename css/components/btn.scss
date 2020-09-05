@@ -34,4 +34,8 @@
     @include tablets {
         padding: rem(21px) rem(34px);
     }
+
+    @include phones {
+        font-size: rem(19px);
+    }
 }

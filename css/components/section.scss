@@ -18,10 +18,6 @@
     text-transform: uppercase;
 
     &--margin {
-        margin-bottom: rem(46px);
-
-        @include tablets {
-            margin-bottom: rem(32px);
-        }
+        margin-bottom: rem(47px);
     }
 }

@@ -1,10 +1,13 @@
 .features__container {
-    width: 95%;
-    max-width: 1000px;
+    max-width: rem(1000px);
 }
 
 .features {
     display: flex;
+
+    @include phones {
+        flex-direction: column;
+    }
 }
 
 .features__item {
@@ -30,10 +33,6 @@
 
     &:last-child {
         padding-right: rem(0px);
-
-        &::before {
-            display: none;
-        }
     }
 
     @include tablets {
