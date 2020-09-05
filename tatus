@@ -1,0 +1,35 @@
+[33mcommit d6532d29fdd45386f971850f37596a9978ae3bf2[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mworking-place[m[33m)[m
+Author: Evgeny Golubev <limp061289@gmail.com>
+Date:   Wed Sep 2 00:45:52 2020 +0300
+
+    test modified index file
+
+[33mcommit 32b49adbc23af560c0da5e3f430deb7d6bc38249[m
+Author: Evgeny Golubev <limp061289@gmail.com>
+Date:   Wed Sep 2 00:12:09 2020 +0300
+
+    test change
+
+[33mcommit 1feed8c21cd8ec5ca1fc6eb719d706de38e7395d[m
+Author: Evgeny Golubev <limp061289@gmail.com>
+Date:   Tue Sep 1 23:50:15 2020 +0300
+
+    readme changed again and again
+
+[33mcommit 8cc1d192164e836d4646761a098bc1a4574d0ee2[m
+Author: Evgeny Golubev <limp061289@gmail.com>
+Date:   Tue Sep 1 23:44:07 2020 +0300
+
+    readme changed again
+
+[33mcommit 0a15137d16a41f9625fdc428d6639efc7711e308[m
+Author: Evgeny Golubev <limp061289@gmail.com>
+Date:   Tue Sep 1 23:08:10 2020 +0300
+
+    added gitignore and readme
+
+[33mcommit c1c6d8e721495232b5850c84eb45755134facf55[m
+Author: Evgeny Golubev <limp061289@gmail.com>
+Date:   Tue Sep 1 22:52:57 2020 +0300
+
+    first commit

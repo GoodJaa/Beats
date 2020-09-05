@@ -1,5 +1,6 @@
 .features__container {
-    width: 1000px;
+    width: 95%;
+    max-width: 1000px;
 }
 
 .features {
@@ -14,20 +15,31 @@
     &::before {
         content: url('../img/icons/circles.svg');
         position: absolute;
-        top: 50px;
+        top: rem(50px);
         right: 0;
         transform: translate(50%);
+
+        @include tablets {
+            display: none;
+        }
     }
 
     &:first-child {
-        padding-left: 0px;
+        padding-left: rem(0px);
     }
 
     &:last-child {
-        padding-right: 0px;
+        padding-right: rem(0px);
 
         &::before {
             display: none;
         }
+    }
+
+    @include tablets {
+        padding: 0;
+        flex-grow: 0;
+        flex-shrink: 1;
+        flex-basis: auto;
     }
 }

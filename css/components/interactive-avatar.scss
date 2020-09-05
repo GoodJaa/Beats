@@ -1,7 +1,7 @@
 .interactive-avatar {
-    width: 76px;
-    height: 76px;
-    border: 6px solid transparent;
+    width: rem(76px);
+    height: rem(76px);
+    border: rem(6px) solid transparent;
     border-radius: 50%;
     overflow: hidden;
     position: relative;
@@ -12,6 +12,12 @@
 
     &--active {
         border-color: $red;
+    }
+
+    @include tablets {
+        width: rem(70px);
+        height: rem(70px);
+        border-width: rem(5px);
     }
 }
 

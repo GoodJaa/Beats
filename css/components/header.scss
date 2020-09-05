@@ -1,32 +1,15 @@
 .header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-}
-
-.menu__list {
-    display: flex;
-    align-items: center;
-    margin-right: 15px;
-}
-
-.menu__item {
-    margin-right: 26px;
-
-    &:last-child {
-        margin-right: 0px;
-    }
-
-    &:hover {
-        color: $red;
-        transition: 0.5s;
-    }
+    align-items: flex-start;
 }
 
 .phone-number {
     display: flex;
-    font-size: 21px;
+    font-size: rem(21px);
     align-items: center;
+    flex-shrink: 0;
+    padding-top: 7px;
 
     &:hover {
         color: $red;
@@ -35,7 +18,13 @@
 }
 
 .phone-number__icon-elem {
-    width: 12px;
-    height: 12px;
-    margin-right: 4px;
+    width: rem(12px);
+    height: rem(12px);
+    margin-right: rem(4px);
+}
+
+.header__phone-number {
+    @include tablets {
+        display: none;
+    }
 }

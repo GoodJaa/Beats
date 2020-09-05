@@ -1,0 +1,25 @@
+.menu {
+    @include tablets {
+        display: none;
+    }
+    margin: 0 30px;
+}
+
+.menu__list {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 rem(-26px) rem(-5px) 0;
+    padding-top: rem(10px);
+}
+
+.menu__item {
+    margin: 0 rem(26px) rem(5px) 0;
+
+    &:hover {
+        color: $red;
+        transition: 0.5s;
+    }
+}

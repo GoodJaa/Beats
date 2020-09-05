@@ -1,9 +1,20 @@
+html {
+    font-size: $baseFontSize;
+
+    // @include tablets {
+    //     font-size: $baseFontSize - 1px;
+    // }
+
+    // @include phones {
+    //     font-size: $baseFontSize - 2px;
+    // }
+}
+
 body, html {
     height: 100%;
 }
 
 body {
-    font-size: $baseFontSize;
     color: #000;
     font-family: 'Play', Arial, Helvetica, sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -13,20 +24,15 @@ body {
 
 .wrapper {
     position: relative;
-    min-width: $containerWidth + 20px;
     min-height: 100%;
     width: 100%;
     overflow: hidden;
 }
 
 .container {
-    width: $containerWidth;
+    width: 95%;
+    max-width: $containerWidth;
     margin: 0 auto;
-    position: relative;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
 //tag styles reset

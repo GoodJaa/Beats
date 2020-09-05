@@ -1,15 +1,26 @@
-
-
 .headset__img {
-    width: 500px;
-    height: 500px;
+    width: rem(500px);
+    height: rem(500px);
     border-radius: 50%;
     overflow: hidden;
 
 
-    &-elem {
-        height: 100%;
+    &:before {
+        content: '';
+        display: block;
+        background: url(../img/content/mx-452.png) center center / contain no-repeat;
         width: 100%;
-        object-fit: fill;
+        height: 100%;
+    }
+
+    @include tablets {
+        width: rem(350px);
+        height: rem(350px);
+        margin-bottom: rem(25px);
+    }
+
+    @include phones {
+        width: rem(323px);
+        height: rem(323px);
     }
 }

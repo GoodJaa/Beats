@@ -1,10 +1,38 @@
 .hero {
     background-color: $gray;
     height: 100vh;
-    min-height: 650px;
+    min-height: rem(650px);
     color: #000000;
     display: flex;
     align-items: center;
+    position: relative;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 20%;
+        right: 10%;
+        display: block;
+        background: url(../img/content/mx-452.png) center center / contain no-repeat;
+        width: rem(500px);
+        height: rem(500px);
+        border-radius: 50%;
+
+        @include tablets {
+            display: none;
+        }
+    }
+
+    // @include tablets {
+    //     width: rem(350px);
+    //     height: rem(350px);
+    //     margin-bottom: rem(25px);
+    // }
+
+    // @include phones {
+    //     width: rem(323px);
+    //     height: rem(323px);
+    // }
 }
 
 .hero__container {
@@ -12,15 +40,15 @@
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
-    padding: 23px 0 36px;
+    padding: rem(23px) 0 rem(36px);
     position: relative;
     
     &::before {
         @include decorElem;
-        height: 41px;
-        width: 10px;
+        height: rem(41px);
+        width: rem(10px);
         background: #999999;
         transform: rotate(45deg) translateY(85%);
-        right: 38px;
+        right: rem(38px);
     }
 }

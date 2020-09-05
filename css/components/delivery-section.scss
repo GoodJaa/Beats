@@ -1,6 +1,6 @@
 .delivery-section {
     color: white;
-    font-size: 18px;
+    font-size: rem(18px);
     background: url(../img/BG/planet-img.jpg) center center no-repeat;
     background-size: cover;
 }
@@ -9,5 +9,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    padding-top: 68px;
+    height: 100%;
 }

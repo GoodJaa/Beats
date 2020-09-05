@@ -1,31 +1,65 @@
-.preview__main-wrapper {
-    height: 100%;
-}
-
-.preview__main {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 100%;
-}
-
 .preview__title-section {
     width: 43%;
-    margin-bottom: 92px;
+    margin-bottom: rem(92px);
+
+    @include tablets {
+        text-align: center;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &:before {
+        content: '';
+        display: none;
+        background: url(../img/content/mx-452.png) center center / contain no-repeat;
+        width: rem(500px);
+        height: rem(500px);
+        border-radius: 50%;
+
+        @include tablets {
+            display: block;
+            width: rem(350px);
+            height: rem(350px);
+            margin-bottom: rem(25px);
+        }
+
+        @include phones {
+            display: block;
+            width: rem(323px);
+            height: rem(323px);
+            margin-bottom: rem(35px);
+        }
+    }
 }
 
 .preview__main-title {
-    font-size: 48px;
+    font-size: rem(48px);
     font-weight: bold;
     text-transform: uppercase;
     line-height: 1.2;
-    margin-bottom: 18px;
-    margin-top: 0px;
+    margin-bottom: rem(18px);
+    margin-top: rem(0px);
+
+    @include tablets {
+        padding: 0 rem(45px);
+        margin-bottom: rem(9px);
+    }
+
+    @include phones {
+        font-size: rem(32px);
+    }
 }
 
 .preview__main-desc {
-    font-size: 18px;
+    font-size: rem(18px);
     line-height: 1.42;
-    margin-bottom: 39px;
-    padding-right: 61px;
+    margin-bottom: rem(39px);
+    padding-right: rem(61px);
+
+    @include tablets {
+        padding: 0 rem(196px);
+        margin-bottom: rem(22px);
+    }
 }
