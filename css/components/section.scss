@@ -20,4 +20,8 @@
     &--margin {
         margin-bottom: rem(47px);
     }
+
+    @include tablets {
+        font-size: rem(32px);
+    }
 }

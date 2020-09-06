@@ -5,10 +5,6 @@
 
 .headline__title {
     margin-bottom: rem(12px);
-
-    @include phones {
-        font-size: rem(32px);
-    }
 }
 
 .headline__subtitle {

@@ -19,6 +19,12 @@
         height: rem(70px);
         border-width: rem(5px);
     }
+
+    @include phones {
+        width: rem(64px);
+        height: rem(64px);
+        border-width: rem(4px);
+    }
 }
 
 .interactive-avatar__link {

@@ -1,26 +1,23 @@
-.headset__img {
-    width: 50%;
-    height: 50%;
-    border-radius: 50%;
-    overflow: hidden;
-
-
-    // &:before {
-    //     content: '';
-    //     display: block;
-    //     background: url(../img/content/mx-452.png) center center / contain no-repeat;
-    //     width: 100%;
-    //     height: 100%;
-    // }
+.headset__img-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: rem(500px);
+    height: rem(500px);
 
     @include tablets {
-        width: 48%;
-        height: 48%;
-        margin-bottom: rem(25px);
+        width: 44%;
+        height: 56%;
     }
 
     @include phones {
         width: 71%;
-        height: 71%;
+        height: 56%;
     }
+}
+
+.headset__img {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 50%;
 }

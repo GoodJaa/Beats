@@ -5,6 +5,10 @@
         flex-direction: column;
         padding: 0 18%;
     }
+
+    @include phones {
+        padding: 0;
+    }
 }
 
 .form__col {
@@ -75,15 +79,19 @@
 .form__controls {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: rem(19px);
+    margin-bottom: rem(11px);
 
     @include tablets {
         margin-bottom: rem(24px);
     }
+
+    @include phones {
+        justify-content: center;
+    }
 }
 
 .form__btn {
-    margin-top: rem(36px);
+    margin-top: rem(43px);
 }
 
 .form__col .form__btn {

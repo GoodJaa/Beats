@@ -1,4 +1,4 @@
-$containerWidth: rem(940px);
+$containerWidth: 940px;
 $baseFontSize: 16px;
 
 @import "components/media.scss";
@@ -54,3 +54,7 @@ $z-fixed-menu: 100;
 @import "components/form.scss";
 @import "components/delivery-section.scss";
 @import "components/radio.scss";
+@import "components/footer.scss";
+@import "components/map.scss";
+@import "components/contacts.scss";
+@import "components/icons-style.scss";

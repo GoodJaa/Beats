@@ -8,11 +8,8 @@
 }
 
 .hero__container {
-    display: flex;
-    flex-direction: column;
     justify-content: space-between;
-    height: 100%;
-    padding: rem(23px) 0 rem(36px);
+    padding: 1% 0 2%;
     position: relative;
     
     &::before {

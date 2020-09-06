@@ -8,17 +8,22 @@
 .preview__main {
     display: flex;
     align-items: center;
+    height: 100%;
     justify-content: space-between;
 
     @include tablets {
         flex-direction: column-reverse;
         align-items: center;
     }
+
+    @include phones {
+        justify-content: center;
+    }
 }
 
 .preview__title-section {
     width: 43%;
-    margin-bottom: rem(92px);
+    margin-right: rem(60px);
 
     @include tablets {
         text-align: center;
@@ -28,6 +33,13 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin-right: 0;
+    }
+
+    @include phones {
+        flex-grow: 0;
+        flex-shrink: 1;
+        flex-basis: auto;
     }
 }
 

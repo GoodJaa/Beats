@@ -1,0 +1,30 @@
+.contacts {
+    display: flex;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 2% 4% 2% 7%;
+    background: #FFF;
+    justify-content: space-between;
+}
+
+.contacts__address {
+    font-style: normal;
+    font-size: rem(18px);
+}
+
+.social__list {
+    display: flex;
+    margin-right: rem(-10px);
+}
+
+.social__item {
+    margin-right: rem(10px);
+}
+
+.social__link {
+    display: block;
+    width: rem(30px);
+    height: rem(30px);
+    border-radius: 50%;
+}
