@@ -28,13 +28,8 @@
     width: rem(30px);
     height: rem(30px);
     overflow: hidden;
-    background: #B3B3B3;
-    border-radius: 50%;
     position: relative;
-
-    &:hover {
-        background: black;
-    }
+    border-radius: 50%;
 }
 
 .social__link-elem {
@@ -42,7 +37,12 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 18px;
-    height: 18px;
-    fill: white;
+    width: rem(30px);
+    height: rem(30px);
+    fill: #B3B3B3;
+    border-width: 0;
+
+    &:hover {
+        fill: black;
+    }
 }
