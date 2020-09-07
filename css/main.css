@@ -594,12 +594,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media screen and (max-width: 768px) {
   .headset__img-wrapper {
+    min-width: 20.1875rem;
+    min-height: 20.1875rem;
     width: 44%;
     height: 56%;
   }
 }
 @media screen and (max-width: 480px) {
   .headset__img-wrapper {
+    min-width: 18.75rem;
+    min-height: 18.75rem;
     width: 71%;
     height: 56%;
   }

@@ -6,11 +6,15 @@
     height: rem(500px);
 
     @include tablets {
+        min-width: rem(323px);
+        min-height: rem(323px);
         width: 44%;
         height: 56%;
     }
 
     @include phones {
+        min-width: rem(300px);
+        min-height: rem(300px);
         width: 71%;
         height: 56%;
     }
