@@ -9,7 +9,13 @@
         margin-right: 0;
     }
 
+    @include tablets {
+        margin-bottom: rem(20px);
+    }
+
     &--checkbox  {
+        margin-bottom: 0;
+
         .radio__visible {
             border-radius: 5px;
 

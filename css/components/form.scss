@@ -79,10 +79,10 @@
 .form__controls {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: rem(11px);
+    margin-bottom: rem(18px);
 
     @include tablets {
-        margin-bottom: rem(24px);
+        margin-bottom: 0;
     }
 
     @include phones {

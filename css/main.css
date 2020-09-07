@@ -240,6 +240,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hamburger {
+  position: fixed;
+  position: fixed;
+  top: 11px;
+  right: 3%;
+  z-index: 100;
   display: none;
   width: 26px;
   height: 24px;
@@ -536,6 +541,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-right: 3%;
     display: flex;
     align-items: center;
+    margin-bottom: 0;
   }
 }
 
@@ -870,11 +876,11 @@ h1, h2, h3, h4, h5, h6 {
 .form__controls {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 0.6875rem;
+  margin-bottom: 1.125rem;
 }
 @media screen and (max-width: 768px) {
   .form__controls {
-    margin-bottom: 1.5rem;
+    margin-bottom: 0;
   }
 }
 @media screen and (max-width: 480px) {
@@ -918,6 +924,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 .radio:last-child {
   margin-right: 0;
+}
+@media screen and (max-width: 768px) {
+  .radio {
+    margin-bottom: 1.25rem;
+  }
+}
+.radio--checkbox {
+  margin-bottom: 0;
 }
 .radio--checkbox .radio__visible {
   border-radius: 5px;
