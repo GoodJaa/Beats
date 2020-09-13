@@ -20,6 +20,27 @@
     }
 }
 
+.headset__img-wrapper--size {
+    width: rem(452px);
+    height: rem(452px);
+    margin-bottom: rem(49px);
+
+    @include tablets {
+        min-width: rem(306px);
+        min-height: rem(306px);
+        width: 42%;
+        height: 37%;
+    }
+
+    @include phones {
+        margin-bottom: rem(26px);
+        min-width: rem(300px);
+        min-height: rem(300px);
+        width: 67%;
+        height: 37%;
+    }
+}
+
 .headset__img {
     width: 100%;
     overflow: hidden;

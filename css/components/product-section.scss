@@ -1,0 +1,23 @@
+.product-section {
+    background: $gray;
+    position: relative;
+
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        background: #292929;
+        bottom: -2%;
+        right: 12%;
+        transform: rotate(29.11deg);
+    }
+}
+
+.product-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}

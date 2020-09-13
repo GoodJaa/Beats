@@ -1,0 +1,23 @@
+.product__switcher {
+    margin: 0 rem(33px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &_right {
+        transform: rotate(180deg);
+    }
+
+    @include tablets {
+        
+    }
+}
+
+.product__switcher-elem {
+    height: rem(27px);
+    width: rem(20px);
+    fill: none;
+    stroke: black;
+    stroke-width: 2;
+    stroke-linecap: round;
+}
