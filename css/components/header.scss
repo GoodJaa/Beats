@@ -9,6 +9,13 @@
     }
 }
 
+.logo {
+    @include tablets {
+        position: relative;
+        top: 24%;
+    }
+}
+
 .phone-number {
     display: flex;
     font-size: rem(21px);

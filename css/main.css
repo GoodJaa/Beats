@@ -200,6 +200,13 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .logo {
+    position: relative;
+    top: 24%;
+  }
+}
+
 .phone-number {
   display: flex;
   font-size: 1.3125rem;
@@ -230,19 +237,23 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media screen and (max-width: 768px) {
   .menu {
-    display: none;
+    display: flex;
     align-items: center;
-    justify-content: center;
     height: 100vh;
     width: 100%;
-    position: absolute;
+    position: fixed;
     background: #313131;
     top: 0;
-    bottom: 0;
-    left: 0;
+    left: 100%;
+    opacity: 0;
     right: 0;
     margin: 0;
     z-index: 100000;
+    transition: all 0.4s;
+  }
+  .menu--overlay {
+    left: 0;
+    opacity: 1;
   }
 }
 
@@ -258,8 +269,8 @@ h1, h2, h3, h4, h5, h6 {
 @media screen and (max-width: 768px) {
   .menu__list {
     height: 100%;
+    width: 100%;
     flex-direction: column;
-    justify-content: center;
     color: white;
     font-size: 2.25rem;
   }
@@ -275,54 +286,69 @@ h1, h2, h3, h4, h5, h6 {
 @media screen and (max-width: 768px) {
   .menu__item:hover {
     color: white;
+    opacity: 0.7;
   }
 }
 @media screen and (max-width: 768px) {
   .menu__item {
     margin-bottom: 2.5rem;
+    margin-right: 0;
   }
-}
-
-.menu-closer {
-  display: none;
-}
-@media screen and (max-width: 768px) {
-  .menu-closer {
-    display: flex;
-    position: absolute;
-    align-items: center;
-    justify-content: center;
-    width: 1.25rem;
-    height: 1.25rem;
-    fill: white;
-    top: 5%;
-    right: 5%;
+  .menu__item:last-child {
+    margin-bottom: 0;
   }
 }
 
 .hamburger {
   position: fixed;
-  position: fixed;
-  top: 11px;
+  top: 3%;
   right: 3%;
-  z-index: 100;
   display: none;
   width: 26px;
   height: 24px;
-  flex-direction: column;
-  justify-content: space-between;
+  z-index: 100000;
+  transition: all 0.4s;
 }
 @media screen and (max-width: 768px) {
   .hamburger {
-    display: inline-flex;
+    display: block;
   }
+}
+.hamburger:hover {
+  opacity: 0.7;
 }
 
 .hamburger__plank {
   display: block;
   background-color: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
   height: 4px;
+  width: 100%;
   border-radius: 10px;
+  transition: all 0.4s;
+}
+.hamburger__plank:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.hamburger__plank:nth-child(3) {
+  top: auto;
+  bottom: 0;
+}
+
+.hamburger--close .hamburger__plank {
+  background-color: white;
+}
+.hamburger--close .hamburger__plank:nth-child(1) {
+  opacity: 0;
+}
+.hamburger--close .hamburger__plank:nth-child(2) {
+  transform: rotate(45deg);
+}
+.hamburger--close .hamburger__plank:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
 }
 
 .preview__main-wrapper {
