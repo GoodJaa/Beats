@@ -1,9 +1,16 @@
+.product-wrapper {
+    position: relative;
+    white-space: nowrap;
+    width: 100%;
+    transition: .4s;
+}
+
 .product {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: space-between;
     height: 100%;
-    position: relative;
+    width: 100%;
 
     @include tablets {
         flex-direction: column;

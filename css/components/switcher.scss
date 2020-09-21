@@ -1,15 +1,22 @@
 .product__switcher {
-    margin: 0 rem(33px);
+    margin: 0 rem(18px) 0 0;
+    cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    z-index: 10;
 
-    &_right {
+    &.product__switcher_right {
         transform: rotate(180deg);
     }
 
     @include tablets {
-        
+
     }
 }
 

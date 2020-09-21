@@ -2,8 +2,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: rem(500px);
-    height: rem(500px);
 
     @include tablets {
         min-width: rem(323px);
@@ -21,21 +19,21 @@
 }
 
 .headset__img-wrapper--size {
-    width: rem(452px);
-    height: rem(452px);
-    margin-bottom: rem(49px);
+    max-width: rem(452px);
+    max-height: rem(452px);
 
     @include tablets {
-        min-width: rem(306px);
-        min-height: rem(306px);
+        max-width: rem(306px);
+        max-height: rem(306px);
         width: 42%;
         height: 37%;
+        margin-bottom: rem(49px);
     }
 
     @include phones {
         margin-bottom: rem(26px);
-        min-width: rem(300px);
-        min-height: rem(300px);
+        max-width: rem(300px);
+        max-height: rem(300px);
         width: 67%;
         height: 37%;
     }

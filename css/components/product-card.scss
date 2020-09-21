@@ -1,8 +1,10 @@
 .product__card {
     width: 47%;
+    white-space: normal;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    flex-wrap: wrap;
     margin-left: 6%;
     margin-right: 3%;
     height: 100%;
@@ -71,6 +73,11 @@
 .product__order {
     display: flex;
     align-items: center;
+
+    @include phones {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
 
 .product__price {

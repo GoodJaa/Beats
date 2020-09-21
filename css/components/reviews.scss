@@ -1,5 +1,6 @@
 .reviews__display {
     background: $gray;
+    min-height: rem(350px);
     padding: rem(50px) rem(110px) rem(35px) rem(35px);
     position: relative;
     overflow: hidden;
@@ -34,7 +35,25 @@
 
 .reviews__display-inner {
     display: flex;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 0;
+    overflow: hidden;
+    transform: rotateX(0);
+    transition: .4s;
+    opacity: 0;
     
+    &.active {
+        height: 100%;
+        z-index: 10;
+        opacity: 1;
+        position: static;
+        transform: rotateX(-360deg);
+    }
+
     @include tablets {
         flex-direction: column;
         align-items: center;
