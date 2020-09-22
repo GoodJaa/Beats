@@ -606,16 +606,17 @@
                 <div class="container">
                     <div class="delivery">
                         <h3 class="section__title section__title--margin">закажите доставку</h3>
-                        <form class="form">
+                        <form class="form" id="form">
+                            <input type="hidden" name="to" value="testmail@test.net">
                             <div class="form__col">
                                 <div class="form__row">
                                     <label class="form__block">
                                         <div class="form__title">Имя</div>
-                                        <input type="text" class="form__input">
+                                        <input type="text" class="form__input" name="name">
                                     </label>
                                     <label class="form__block">
                                         <div class="form__title">Телефон</div>
-                                        <input type="tel" class="form__input">
+                                        <input type="tel" class="form__input" name="phone">
                                     </label>
                                 </div>
                                 <div class="form__row">
@@ -647,7 +648,7 @@
                                 <div class="form__row">
                                     <label class="form__block">
                                         <div class="form__title">Коментарий</div>
-                                        <textarea class="form__input form__input--textarea"></textarea>
+                                        <textarea class="form__input form__input--textarea" name="comment"></textarea>
                                     </label>
                                 </div>
                                 <div class="form__controls">
@@ -732,6 +733,16 @@
                     </footer>
                 </div>
             </section>
+        </div>
+    </div>
+    <div class="modal" id="modal">
+        <div class="modal__container">
+            <div class="modal__content">
+                Сообщение отправлено
+            </div>
+            <div class="modal__button-container">
+                <a href="" class="btn modal-close-btn btn--theme--red ">Закрыть</a>
+            </div>
         </div>
     </div>
     <nav class="fixed-menu">

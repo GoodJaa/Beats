@@ -1,0 +1,35 @@
+.modal {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000000;
+
+    &--active {
+        display: flex;
+    }
+}
+
+.modal__container {
+    background-color: white;
+    padding: rem(37px) rem(55px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.5);
+    margin: 0 10px;
+}
+
+.modal__content {
+    font-size: rem(18px);
+    text-align: center;
+    margin-bottom: rem(20px);
+}
+
+.modal--error {
+    color:  $red;
+}

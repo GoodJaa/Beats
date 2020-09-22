@@ -1428,6 +1428,10 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.input-error {
+  border-color: #e01f3d;
+}
+
 .delivery-section {
   color: white;
   font-size: 1.125rem;
@@ -1563,4 +1567,39 @@ h1, h2, h3, h4, h5, h6 {
 }
 .social__link-elem:hover {
   fill: black;
+}
+
+.modal {
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000000;
+}
+.modal--active {
+  display: flex;
+}
+
+.modal__container {
+  background-color: white;
+  padding: 2.3125rem 3.4375rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.5);
+  margin: 0 10px;
+}
+
+.modal__content {
+  font-size: 1.125rem;
+  text-align: center;
+  margin-bottom: 1.25rem;
+}
+
+.modal--error {
+  color: #e01f3d;
 }
