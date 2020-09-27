@@ -1,0 +1,13 @@
+.product-color__section {
+    background: url(../img/BG/hp-hero.png)50%/cover no-repeat;
+    background-position: center top;
+    position: relative;
+    background-color: rgba($color: #000000, $alpha: .7);
+}
+
+.product-color__title {
+    position: absolute;
+    top: 12%;
+    left: 5%;
+    color: white;
+}

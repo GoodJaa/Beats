@@ -43,4 +43,8 @@
     width: 100%;
     overflow: hidden;
     border-radius: 50%;
+
+    @include phones {
+        width: 90%;
+    }
 }

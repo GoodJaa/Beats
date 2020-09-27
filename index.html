@@ -12,7 +12,7 @@
 <body>
     <div class="wrapper">
         <div class="maincontent">
-            <section class="hero">
+            <section data-section-id="hero" class="hero">
                 <div class="container hero__container">
                     <header class="header">
                         <div class="logo">
@@ -21,25 +21,25 @@
                         <div class="menu">
                             <ul class="menu__list">
                                 <li class="menu__item">
-                                    <a href="#" class="menu__link">О нас</a>
+                                    <a href="#" data-scroll-to="features" class="menu__link">О нас</a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="#" class="menu__link">Наушники</a>
+                                    <a href="#" data-scroll-to="product" class="menu__link">Наушники</a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="#" class="menu__link">Команда</a>
+                                    <a href="#" data-scroll-to="team" class="menu__link">Команда</a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="#" class="menu__link">Цвета</a>
+                                    <a href="#" data-scroll-to="product-color" class="menu__link">Цвета</a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="#" class="menu__link">Отзывы</a>
+                                    <a href="#" data-scroll-to="reviews" class="menu__link">Отзывы</a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="#" class="menu__link">Как мы работаем</a>
+                                    <a href="#" data-scroll-to="" class="menu__link">Как мы работаем</a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="#" class="menu__link">Контакты</a>
+                                    <a href="#" data-scroll-to="contacts" class="menu__link">Контакты</a>
                                 </li>
                             </ul>
                         </div>
@@ -65,7 +65,7 @@
                             <div class="preview__main-desc">
                                 Встречайте новую версию наушников из линейки Powerbeats.
                             </div>
-                            <a href="" class="btn btn--theme--red">заказать</a>
+                            <a href="#" data-scroll-to="delivery" class="btn btn--theme--red">заказать</a>
                         </div>
                         <div class="headset__img-wrapper">
                             <div class="headset__img">
@@ -103,7 +103,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section features-section">
+            <section data-section-id="features" class="section features-section">
                 <div class="container features__container">
                     <div class="headline">
                         <h2 class="section__title headline__title">почему beats solo 3?</h2>
@@ -176,7 +176,7 @@
                     </ul>
                 </div>
             </section>
-            <section class="section product-section">
+            <section data-section-id="product" class="section product-section">
                 <div class="container product__container">
                     <div class="slider">
                         <button class="product__switcher" id="left">
@@ -205,7 +205,8 @@
                                                     <li class="dropdown__item">
                                                         <div class="dropdown__icon">
                                                             <svg class="dropdown__icon-elem">
-                                                                <use xlink:href="./img/icons/sprite.svg#bluetooth"></use>
+                                                                <use xlink:href="./img/icons/sprite.svg#bluetooth">
+                                                                </use>
                                                             </svg>
                                                         </div>
                                                         <div class="dropdown__function">Bluetooth</div>
@@ -254,7 +255,8 @@
                                             beats solo 3. цвет «атласное серебро»
                                         </h2>
                                         <div class="product__desc">
-                                            Беспроводные наушники Beats Solo3 готовы к работе в любой момент. Включите их и
+                                            Беспроводные наушники Beats Solo3 готовы к работе в любой момент. Включите
+                                            их и
                                             поднесите к
                                             своему iPhone — они мгновенно подключатся к нему.
                                         </div>
@@ -272,7 +274,7 @@
                                         </div>
                                         <div class="product__order">
                                             <div class="product__price">14 990 ₽</div>
-                                            <a href="" class="btn btn--theme--red">заказать</a>
+                                            <a href="#" data-scroll-to="delivery" class="btn btn--theme--red">заказать</a>
                                         </div>
                                     </div>
                                 </li>
@@ -295,7 +297,8 @@
                                                     <li class="dropdown__item">
                                                         <div class="dropdown__icon">
                                                             <svg class="dropdown__icon-elem">
-                                                                <use xlink:href="./img/icons/sprite.svg#bluetooth"></use>
+                                                                <use xlink:href="./img/icons/sprite.svg#bluetooth">
+                                                                </use>
                                                             </svg>
                                                         </div>
                                                         <div class="dropdown__function">Bluetooth</div>
@@ -344,7 +347,8 @@
                                             beats solo pro. цвет «красный цитрус»
                                         </h2>
                                         <div class="product__desc">
-                                            Беспроводные наушники Beats Solo3 готовы к работе в любой момент. Включите их и
+                                            Беспроводные наушники Beats Solo3 готовы к работе в любой момент. Включите
+                                            их и
                                             поднесите к
                                             своему iPhone — они мгновенно подключатся к нему.
                                         </div>
@@ -362,7 +366,7 @@
                                         </div>
                                         <div class="product__order">
                                             <div class="product__price">14 990 ₽</div>
-                                            <a href="" class="btn btn--theme--red">заказать</a>
+                                            <a href="#" data-scroll-to="delivery" class="btn btn--theme--red">заказать</a>
                                         </div>
                                     </div>
                                 </li>
@@ -376,7 +380,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section team-section">
+            <section data-section-id="team" class="section team-section">
                 <div class="container">
                     <div class="section__title team__title">Команда</div>
                     <!-- desktop -->
@@ -517,7 +521,69 @@
                     </ul>
                 </div>
             </section>
-            <section class="section reviews-section">
+            <section data-section-id="product-color" class="section product-color__section">
+                <h3 class="section__title product-color__title">Цвета</h3>
+                <ul class="product-color__list">
+                    <li class="product-color__item">
+                        <a href="#" class="product-color__switch product-color__switch--gray">
+                            <span class="product-color__switch-text">
+                                «Атласное серебро»
+                            </span>
+                        </a>
+                        <div class="product-color__desc">
+                            <div class="product-color__desc-text">
+                                <p>
+                                    Наушники Beats Solo3 могут работать до 40 часов без подзарядки, чтобы вы могли
+                                    пользоваться ими каждый день. 5‑минутной зарядки Fast Fuel хватит ещё на 3 часа
+                                    воспроизведения. Фирменное звучание Beats в наушниках с технологией Bluetooth
+                                    класса 1 будет сопровождать вас повсюду — куда бы вы ни отправились.
+                                    Расположение чашек с мягкими амбушюрами можно регулировать — вы сможете носить
+                                    их целый день.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="product-color__item">
+                        <a href="#" class="product-color__switch product-color__switch--black">
+                            <span class="product-color__switch-text">
+                                «Чёрный матовый»
+                            </span>
+                        </a>
+                        <div class="product-color__desc">
+                            <div class="product-color__desc-text">
+                                <p>
+                                    Наушники Beats Solo3 могут работать до 40 часов без подзарядки, чтобы вы могли
+                                    пользоваться ими каждый день. 5‑минутной зарядки Fast Fuel хватит ещё на 3 часа
+                                    воспроизведения. Фирменное звучание Beats в наушниках с технологией Bluetooth
+                                    класса 1 будет сопровождать вас повсюду — куда бы вы ни отправились.
+                                    Расположение чашек с мягкими амбушюрами можно регулировать — вы сможете носить
+                                    их целый день.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="product-color__item">
+                        <a href="#" class="product-color__switch product-color__switch--red">
+                            <span class="product-color__switch-text">
+                                «Красный цитрус»
+                            </span>
+                        </a>
+                        <div class="product-color__desc">
+                            <div class="product-color__desc-text">
+                                <p>
+                                    Наушники Beats Solo3 могут работать до 40 часов без подзарядки, чтобы вы могли
+                                    пользоваться ими каждый день. 5‑минутной зарядки Fast Fuel хватит ещё на 3 часа
+                                    воспроизведения. Фирменное звучание Beats в наушниках с технологией Bluetooth
+                                    класса 1 будет сопровождать вас повсюду — куда бы вы ни отправились.
+                                    Расположение чашек с мягкими амбушюрами можно регулировать — вы сможете носить
+                                    их целый день.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <section data-section-id="reviews" class="section reviews-section">
                 <div class="container reviews__container">
                     <h3 class="section__title">Отзывы</h3>
                     <div class="reviews">
@@ -602,7 +668,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section delivery-section section--font-color--theme">
+            <section data-section-id="delivery" class="section delivery-section section--font-color--theme">
                 <div class="container">
                     <div class="delivery">
                         <h3 class="section__title section__title--margin">закажите доставку</h3>
@@ -679,7 +745,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section">
+            <section data-section-id="contacts" class="section contacts-section">
                 <div class="container footer__container">
                     <footer class="footer">
                         <div class="map">
@@ -747,37 +813,44 @@
     </div>
     <nav class="fixed-menu">
         <ul class="fixed-menu__list">
-            <li class="fixed-menu__item fixed-menu__item--active">
+            <li data-scroll-to="hero" class="fixed-menu__item fixed-menu__item--active">
+                <a href="#" class="fixed-menu__link"></a>
+            </li>
+            <li data-scroll-to="features" class="fixed-menu__item">
+                <a href="#" class="fixed-menu__link"></a>
+            </li>
+            <li data-scroll-to="product" class="fixed-menu__item">
+                <a href="#" class="fixed-menu__link"></a>
+            </li>
+            <li data-scroll-to="team" class="fixed-menu__item">
+                <a href="#" class="fixed-menu__link"></a>
+            </li>
+            <li data-scroll-to="product-color" class="fixed-menu__item">
+                <a href="" class="fixed-menu__link"></a>
+            </li>
+            <li data-scroll-to="reviews" class="fixed-menu__item">
                 <a href="" class="fixed-menu__link"></a>
             </li>
             <li class="fixed-menu__item">
                 <a href="" class="fixed-menu__link"></a>
             </li>
-            <li class="fixed-menu__item">
+            <li data-scroll-to="delivery" class="fixed-menu__item">
                 <a href="" class="fixed-menu__link"></a>
             </li>
-            <li class="fixed-menu__item">
-                <a href="" class="fixed-menu__link"></a>
-            </li>
-            <li class="fixed-menu__item">
-                <a href="" class="fixed-menu__link"></a>
-            </li>
-            <li class="fixed-menu__item">
-                <a href="" class="fixed-menu__link"></a>
-            </li>
-            <li class="fixed-menu__item">
-                <a href="" class="fixed-menu__link"></a>
-            </li>
-            <li class="fixed-menu__item">
-                <a href="" class="fixed-menu__link"></a>
-            </li>
-            <li class="fixed-menu__item">
+            <li data-scroll-to="contacts" class="fixed-menu__item">
                 <a href="" class="fixed-menu__link"></a>
             </li>
         </ul>
     </nav>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="./scripts/script.js"></script>
+    <script src="./scripts/ops.js"></script>
+    <script src="./scripts/hamburger.js"></script>
+    <script src="./scripts/form.js"></script>
+    <script src="./scripts/color.js"></script>
+    <script src="./scripts/parameters-button.js"></script>
+    <script src="./scripts/reviews.js"></script>
+    <script src="./scripts/team.js"></script>
+    <script src="./scripts/slider.js"></script>
 </body>
 
 </html>

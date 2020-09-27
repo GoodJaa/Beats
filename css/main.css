@@ -4,12 +4,12 @@ html {
 }
 @media screen and (max-width: 768px) {
   html {
-    font-size: 15px;
+    font-size: 14px;
   }
 }
 @media screen and (max-width: 480px) {
   html {
-    font-size: 14px;
+    font-size: 13px;
   }
 }
 
@@ -27,9 +27,15 @@ body {
 
 .wrapper {
   position: relative;
-  min-height: 100%;
+  height: 100%;
   width: 100%;
   overflow: hidden;
+}
+
+.maincontent {
+  height: 100%;
+  transition: transform 1s;
+  will-change: transform;
 }
 
 .container {
@@ -139,6 +145,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  overflow: hidden;
 }
 .section--font-color--theme {
   color: white;
@@ -723,6 +730,11 @@ h1, h2, h3, h4, h5, h6 {
   overflow: hidden;
   border-radius: 50%;
 }
+@media screen and (max-width: 480px) {
+  .headset__img {
+    width: 90%;
+  }
+}
 
 .product-section {
   background: #f5f5f5;
@@ -911,6 +923,101 @@ h1, h2, h3, h4, h5, h6 {
 
 .content-block__text {
   color: #666666;
+}
+
+.product-color__section {
+  background: url(../img/BG/hp-hero.png) 50%/cover no-repeat;
+  background-position: center top;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.product-color__title {
+  position: absolute;
+  top: 12%;
+  left: 5%;
+  color: white;
+}
+
+.product-color__list {
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  z-index: 1;
+}
+
+.product-color__item {
+  height: 100%;
+  display: flex;
+  visibility: visible;
+}
+.product-color__item.active .product-color__desc {
+  width: 34.375rem;
+  opacity: 1;
+  transition: all 0.4s;
+}
+@media screen and (max-width: 480px) {
+  .product-color__item.active {
+    flex-shrink: 0;
+    order: 1;
+  }
+}
+.product-color__item.active .product-color__desc-text {
+  opacity: 1;
+  margin-top: 0;
+}
+
+.product-color__switch {
+  display: flex;
+  justify-content: center;
+  width: 6.25rem;
+}
+.product-color__switch--gray {
+  background: #999999;
+}
+.product-color__switch--black {
+  background: #151515;
+}
+.product-color__switch--red {
+  background: #E01F3C;
+}
+@media screen and (max-width: 768px) {
+  .product-color__switch {
+    width: 5rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .product-color__switch {
+    width: 3.75rem;
+  }
+}
+
+.product-color__switch-text {
+  font-size: 2.25rem;
+  color: white;
+  white-space: nowrap;
+  writing-mode: tb-rl;
+  transform: rotate(180deg);
+  margin-bottom: 2.125rem;
+}
+
+.product-color__desc {
+  width: 0;
+  background: rgba(51, 53, 55, 0.9);
+  color: white;
+  transition: width 0.4s;
+  overflow: hidden;
+}
+
+.product-color__desc-text {
+  margin-top: 36.875rem;
+  padding: 1.9375rem 2.375rem 0;
+  opacity: 0;
+  width: 100%;
+  position: relative;
+  line-height: 1.57;
+  transition: 0.8s;
+  transition-delay: 0.4s;
 }
 
 .product-wrapper {
