@@ -103,7 +103,6 @@ $("[data-scroll-to]").click(e => {
     perfomTransition(reqSection.index());
 });
 
-$('.wrapper').on('touchmove', e => e.preventDefault());
 
 if (isMobile) {
 
