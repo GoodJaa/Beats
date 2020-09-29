@@ -119,7 +119,7 @@ if (isMobile) {
                 if (direction === "up") scrollDirection = "next";
                 if (direction === "down") scrollDirection = "prev";
 
-                scroller(scrollDirection)();
+                scroller[scrollDirection]();
             }
         });
     });
