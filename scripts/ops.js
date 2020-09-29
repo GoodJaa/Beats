@@ -10,18 +10,40 @@ const perfomTransition = sectionEq => {
     if (inScroll === false) {
         inScroll = true;
         const position = sectionEq * -100;
-    
+
+        const curSection = sections.eq(sectionEq);
+        const menuTheme = curSection.attr("data-sidemenu-theme");
+        
+        $(".fixed-menu__item").removeClass("fixed-menu__item--active--white");
+
+        if (menuTheme === "white") {
+            fixedMenu
+                .find(".fixed-menu__item")
+                .eq(sectionEq)
+                .addClass("fixed-menu__item--active--white")
+                .siblings()
+                .removeClass("fixed-menu__item--active--white");
+        }
+
         display.css({
             transform: `translateY(${position}%)`
         });
 
-        sections.eq(sectionEq).addClass("active").siblings().removeClass("active");
+        sections.eq(sectionEq)
+            .addClass("active")
+            .siblings()
+            .removeClass("active");
 
         setTimeout(() => {
             inScroll = false;
         }, 1300);
 
-        fixedMenu.find(".fixed-menu__item").eq(sectionEq).addClass("fixed-menu__item--active").siblings().removeClass("fixed-menu__item--active");
+        fixedMenu
+            .find(".fixed-menu__item")
+            .eq(sectionEq)
+            .addClass("fixed-menu__item--active")
+            .siblings()
+            .removeClass("fixed-menu__item--active");
     }
 };
 

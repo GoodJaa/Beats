@@ -25,6 +25,12 @@
         .fixed-menu__link {
             border-color: $red;
         }
+
+        &--white {
+            .fixed-menu__link {
+                border-color: white;
+            }
+        }
     }
 }
 

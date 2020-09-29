@@ -11,4 +11,9 @@
     align-items: center;
     padding-top: 68px;
     height: 100%;
+
+    @include phones {
+        padding-top: 0;
+        justify-content: center;
+    }
 }

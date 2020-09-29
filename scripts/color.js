@@ -46,7 +46,7 @@
     });
 
     document.addEventListener('click', e => {
-        e.preventDefault();
+
         const links = document.querySelector('.product-color__item');
         const activeLinks = document.querySelector('.product-color__item.active');
         const target = e.target;

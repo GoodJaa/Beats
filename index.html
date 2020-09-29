@@ -36,7 +36,7 @@
                                     <a href="#" data-scroll-to="reviews" class="menu__link">Отзывы</a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="#" data-scroll-to="" class="menu__link">Как мы работаем</a>
+                                    <a href="#" data-scroll-to="our-work" class="menu__link">Как мы работаем</a>
                                 </li>
                                 <li class="menu__item">
                                     <a href="#" data-scroll-to="contacts" class="menu__link">Контакты</a>
@@ -274,7 +274,8 @@
                                         </div>
                                         <div class="product__order">
                                             <div class="product__price">14 990 ₽</div>
-                                            <a href="#" data-scroll-to="delivery" class="btn btn--theme--red">заказать</a>
+                                            <a href="#" data-scroll-to="delivery"
+                                                class="btn btn--theme--red">заказать</a>
                                         </div>
                                     </div>
                                 </li>
@@ -366,7 +367,8 @@
                                         </div>
                                         <div class="product__order">
                                             <div class="product__price">14 990 ₽</div>
-                                            <a href="#" data-scroll-to="delivery" class="btn btn--theme--red">заказать</a>
+                                            <a href="#" data-scroll-to="delivery"
+                                                class="btn btn--theme--red">заказать</a>
                                         </div>
                                     </div>
                                 </li>
@@ -521,7 +523,7 @@
                     </ul>
                 </div>
             </section>
-            <section data-section-id="product-color" class="section product-color__section">
+            <section data-sidemenu-theme="white" data-section-id="product-color" class="section product-color__section">
                 <h3 class="section__title product-color__title">Цвета</h3>
                 <ul class="product-color__list">
                     <li class="product-color__item">
@@ -666,6 +668,44 @@
                             </li>
                         </ul>
                     </div>
+                </div>
+            </section>
+            <section data-section-id="our-work" class="section our-work__section">
+                <div class="container our-work__container">
+                    <h3 class="section__title">как мы работаем</h3>
+                    <div class="player__container">
+                        <div class="player">
+                            <div class="player__wrapper">
+                                <div id="yt-player" class="player__elem"></div>
+                                <div class="player__splash">
+                                    <svg class="player__icon--play">
+                                        <use xlink:href="./img/icons/sprite.svg#play"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="player__controls">
+                                <button class="player__start-btn">
+                                    <svg class="player__icon player__icon--play player__icon--play--small">
+                                        <use xlink:href="./img/icons/sprite.svg#play"></use>
+                                    </svg>
+                                    <svg class="player__icon player__icon--pause">
+                                        <use xlink:href="./img/icons/sprite.svg#pause"></use>
+                                    </svg>
+                                </button>
+                                <div class="player__playback">
+                                    <button class="player__playback-btn"></button>
+                                    <div class="player__playback-line"></div>
+                                </div>
+                                <div class="player__duration">
+                                    <span class="player__duration-current">0:00</span> /
+                                    <span class="player__duration-end">0:00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="decoration-elem">
+                    <div class="decoration-elem__pentagon"></div>
                 </div>
             </section>
             <section data-section-id="delivery" class="section delivery-section section--font-color--theme">
@@ -831,7 +871,7 @@
             <li data-scroll-to="reviews" class="fixed-menu__item">
                 <a href="" class="fixed-menu__link"></a>
             </li>
-            <li class="fixed-menu__item">
+            <li data-scroll-to="our-work" class="fixed-menu__item">
                 <a href="" class="fixed-menu__link"></a>
             </li>
             <li data-scroll-to="delivery" class="fixed-menu__item">
@@ -843,12 +883,14 @@
         </ul>
     </nav>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
     <script src="./scripts/ops.js"></script>
     <script src="./scripts/hamburger.js"></script>
     <script src="./scripts/form.js"></script>
     <script src="./scripts/color.js"></script>
     <script src="./scripts/parameters-button.js"></script>
     <script src="./scripts/reviews.js"></script>
+    <script src="./scripts/player.js"></script>
     <script src="./scripts/team.js"></script>
     <script src="./scripts/slider.js"></script>
 </body>
