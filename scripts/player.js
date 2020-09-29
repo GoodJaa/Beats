@@ -9,11 +9,9 @@ let eventsInit = () => {
         playerBlock.addClass("active");
 
         if (playerBlock.hasClass("paused")) {
-            playerBlock.removeClass("paused");
-            player.pauseVideo()
+            player.pauseVideo();
         } else {
-            playerBlock.addClass("paused");
-            player.playVideo()
+            player.playVideo();
         }
     });
 
@@ -28,6 +26,10 @@ let eventsInit = () => {
         });
 
         player.seekTo(nePlaybackPositionSec);
+    });
+
+    $('.player__splash').click(e=> {
+        player.playVideo();
     });
 };
 
@@ -72,6 +74,27 @@ const onPlayerReady = () => {
     }, 1000);
 };
 
+const onPlayerStateChange = event => {
+    switch (event.data) {
+        /* Возвращает состояние проигрывателя. Возможные значения:
+            -1 – воспроизведение видео не началось
+            0 – воспроизведение видео завершено
+            1 – воспроизведение
+            2 – пауза
+            3 – буферизация
+            5 – видео находится в очереди */
+        case 1:
+            playerBlock.addClass('active');
+            playerBlock.addClass("paused");
+            break;
+    
+        case 2:
+            playerBlock.removeClass('active');
+            playerBlock.removeClass("paused");
+            break;
+    }
+}
+
 onPlayerReady();
 
 function onYouTubeIframeAPIReady() {
@@ -81,7 +104,7 @@ function onYouTubeIframeAPIReady() {
         videoId: 'xBiXELRMwhI',
         events: {
             'onReady': onPlayerReady,
-        // 'onStateChange': onPlayerStateChange
+            'onStateChange': onPlayerStateChange
         },
         playerVars: {
             controls: 0,

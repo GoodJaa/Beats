@@ -1486,6 +1486,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 3.0625rem;
   height: 4.4375rem;
   fill: white;
+  cursor: pointer;
 }
 .player__icon--play--small {
   height: 1rem;
@@ -1831,10 +1832,6 @@ h1, h2, h3, h4, h5, h6 {
   transform: translate(-50%, -50%);
 }
 
-.footer__container {
-  max-width: 68.75rem;
-}
-
 .footer {
   position: relative;
   height: 100%;
@@ -1842,19 +1839,18 @@ h1, h2, h3, h4, h5, h6 {
 
 .map {
   height: 100%;
+  width: 100%;
 }
 
-.map__elem {
-  height: 100%;
-  width: 100%;
-  object-fit: fill;
+.footer {
+  position: relative;
 }
 
 .contacts {
-  display: flex;
-  width: 100%;
   position: absolute;
   bottom: 0;
+  display: flex;
+  width: 100%;
   align-items: center;
   padding: 2% 4% 2% 7%;
   background: #FFF;
