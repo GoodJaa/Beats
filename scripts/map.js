@@ -27,7 +27,7 @@ const init = () => {
     });
 
     myMap.geoObjects.add(myCollection);
-    myMap.bihaviors.disable('scrollZoom');
+    myMap.behaviors.disable('scrollZoom');
 
     
 };
