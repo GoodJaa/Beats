@@ -1,0 +1,52 @@
+.footer {
+    position: relative;
+}
+
+.contacts {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 2% 4% 2% 7%;
+    background: #FFF;
+    justify-content: space-between;
+}
+
+.contacts__address {
+    font-style: normal;
+    font-size: rem(18px);
+}
+
+.social__list {
+    display: flex;
+    margin-right: rem(-10px);
+}
+
+.social__item {
+    margin-right: rem(10px);
+}
+
+.social__link {
+    display: inline-block;
+    width: rem(30px);
+    height: rem(30px);
+    overflow: hidden;
+    position: relative;
+    border-radius: 50%;
+}
+
+.social__link-elem {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: rem(30px);
+    height: rem(30px);
+    fill: #B3B3B3;
+    border-width: 0;
+
+    &:hover {
+        fill: black;
+    }
+}

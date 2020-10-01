@@ -1,0 +1,19 @@
+.delivery-section {
+    color: white;
+    font-size: rem(18px);
+    background: url(../img/BG/planet-img.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.delivery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 68px;
+    height: 100%;
+
+    @include phones {
+        padding-top: 0;
+        justify-content: center;
+    }
+}

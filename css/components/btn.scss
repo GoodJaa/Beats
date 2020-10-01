@@ -1,0 +1,41 @@
+.btn {
+    display: inline-block;
+    text-transform: uppercase;
+    padding: rem(17px) rem(41px);
+    border-radius: rem(100px);
+    font-weight: bold;
+    line-height: 1;
+    border-style: none;
+    cursor: pointer;
+
+    &--theme--red {
+        background: $red;
+        color: #ffffff;
+
+        &:hover {
+            background: #ca1b36;
+            transition: 0.5s;
+        }
+    }
+
+    &--theme--transparent {
+        background: transparent;
+        color: #999999;
+        text-transform: none;
+        font-weight: normal;
+        padding: 0 rem(10px);
+
+        &:hover {
+            color: $red;
+            transition: 0.5s;
+        }
+    }
+
+    @include tablets {
+        padding: rem(21px) rem(34px);
+    }
+
+    @include phones {
+        font-size: rem(19px);
+    }
+}

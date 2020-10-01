@@ -1,0 +1,35 @@
+$containerWidth: 940px;
+$baseFontSize: 16px;
+
+@import "components/media.scss";
+
+//breakpoints
+
+$tablets: 768px;
+$phones: 480px;
+
+//colors
+
+$red: #e01f3d;
+$gray: #f5f5f5;
+
+//mixins
+
+@mixin decorElem {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+}
+
+//z-index
+
+$z-fixed-menu: 100;
+
+//setups
+
+@import "components/layout.scss";
+
+//components
+
+@import "components/*.scss";

@@ -1,0 +1,43 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+
+    @include tablets {
+        align-items: center;
+    }
+}
+
+.logo {
+    @include tablets {
+        position: relative;
+        top: 24%;
+    }
+}
+
+.phone-number {
+    display: flex;
+    font-size: rem(21px);
+    align-items: center;
+    flex-shrink: 0;
+    padding-top: 7px;
+
+    &:hover {
+        color: $red;
+        transition: 0.5s;
+        fill: $red;
+    }
+}
+
+.phone-number__icon-elem {
+    width: rem(12px);
+    height: rem(12px);
+    margin-right: rem(4px);
+}
+
+.header__phone-number {
+    @include tablets {
+        display: none;
+    }
+}

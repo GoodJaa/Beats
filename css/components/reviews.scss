@@ -1,0 +1,132 @@
+.reviews__display {
+    background: $gray;
+    min-height: rem(350px);
+    padding: rem(50px) rem(110px) rem(35px) rem(35px);
+    position: relative;
+    overflow: hidden;
+
+    @include tablets {
+        padding: rem(56px) rem(22px) rem(22px) rem(22px);
+    }
+
+    &::before {
+        content: '';
+        display: block;
+        width: rem(90px);
+        height: rem(90px);
+        border-radius: 50%;
+        background: #ffffff;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: rem(-65px);
+
+        @include tablets {
+            width: rem(84px);
+            height: rem(84px);
+            top: rem(-50px);
+        }
+
+        @include phones {
+            display: none;
+        }
+    }
+}
+
+.reviews__display-inner {
+    display: flex;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 0;
+    overflow: hidden;
+    transform: rotateX(0);
+    transition: .4s;
+    opacity: 0;
+    
+    &.active {
+        height: 100%;
+        z-index: 10;
+        opacity: 1;
+        position: static;
+        transform: rotateX(-360deg);
+    }
+
+    @include tablets {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.reviews__avatar {
+    width: rem(252px);
+    height: rem(260px);
+    margin-right: rem(19px);
+
+    @include tablets {
+        width: rem(130px);
+        height: rem(130px);
+        margin-right: 0;
+        margin-bottom: rem(26px);
+    }
+}
+
+.reviews__avatar-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.reviews__content {
+    flex: 1;
+    font-size: rem(18px);
+    padding-top: 1%;
+
+    @include tablets {
+        text-align: center;
+        margin-right: 0;
+        margin-bottom: rem(10px);
+        font-size: rem(16px);
+        padding-top: 0;
+    }
+}
+
+.reviews__title {
+    font-size: rem(27px);
+    font-weight: bold;
+    margin-bottom: rem(29px);
+    
+    @include tablets {
+        margin-bottom: 18px;
+    }
+}
+
+.reviews__text {
+    color: #666666;
+    margin-bottom: rem(35px);
+}
+
+.reviews__name {
+    font-weight: bold;
+
+    @include tablets {
+        font-weight: normal;
+        font-size: rem(18px);
+    }
+}
+
+.reviews__switcher {
+    display: flex;
+    justify-content: center;
+    margin-top: rem(21px);
+}
+
+.reviews__switcher-item {
+    margin-right: rem(3px);
+
+    &:last-child {
+        margin-right: 0;
+    }
+}

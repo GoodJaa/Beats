@@ -1,0 +1,25 @@
+.hero {
+    background-color: $gray;
+    height: 100%;
+    min-height: rem(650px);
+    color: #000000;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    &::before {
+        @include decorElem;
+        height: rem(41px);
+        width: rem(10px);
+        background: #999999;
+        transform: rotate(45deg) translateY(85%);
+        right: 12%;
+        z-index: 100;
+    }
+}
+
+.hero__container {
+    justify-content: space-between;
+    padding: 1% 0 2%;
+    position: relative;
+}

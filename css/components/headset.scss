@@ -1,0 +1,50 @@
+.headset__img-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include tablets {
+        min-width: rem(323px);
+        min-height: rem(323px);
+        width: 44%;
+        height: 56%;
+    }
+
+    @include phones {
+        min-width: rem(300px);
+        min-height: rem(300px);
+        width: 71%;
+        height: 56%;
+    }
+}
+
+.headset__img-wrapper--size {
+    max-width: rem(452px);
+    max-height: rem(452px);
+
+    @include tablets {
+        max-width: rem(306px);
+        max-height: rem(306px);
+        width: 42%;
+        height: 37%;
+        margin-bottom: rem(49px);
+    }
+
+    @include phones {
+        margin-bottom: rem(26px);
+        max-width: rem(300px);
+        max-height: rem(300px);
+        width: 67%;
+        height: 37%;
+    }
+}
+
+.headset__img {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 50%;
+
+    @include phones {
+        width: 90%;
+    }
+}

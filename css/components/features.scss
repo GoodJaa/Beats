@@ -1,0 +1,59 @@
+.features__container {
+    max-width: rem(1000px);
+}
+
+.features {
+    display: flex;
+
+    @include phones {
+        flex-direction: column;
+    }
+}
+
+.features__item {
+    flex: 1;
+    padding: 0 2%;
+    position: relative;
+
+    &::before {
+        content: url('../img/icons/circles.svg');
+        position: absolute;
+        top: rem(50px);
+        right: 0;
+        transform: translate(50%);
+
+        @include tablets {
+            display: none;
+        }
+    }
+
+    &:first-child {
+        padding-left: rem(0px);
+    }
+
+    &:last-child {
+        padding-right: rem(0px);
+
+        &::before {
+            display: none;
+        }
+    }
+
+    @include tablets {
+        padding: 0;
+        flex-grow: 0;
+        flex-shrink: 1;
+        flex-basis: auto;
+    }
+
+    @include phones {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 6%;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

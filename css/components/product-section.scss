@@ -1,0 +1,35 @@
+.product-section {
+    background: $gray;
+    position: relative;
+
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        background: #292929;
+        bottom: -2%;
+        right: 12%;
+        transform: rotate(29.11deg);
+    }
+}
+
+.slider {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.slider__container {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.product__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,40 @@
+.team__section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.team__title {
+    margin-bottom: rem(53px);
+
+    @include tablets {
+        font-size: rem(48px);
+    }
+
+    @include phones {
+        font-size: rem(32px);
+    }
+}
+
+.team__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include tablets {
+        display: none;
+    }
+}
+
+.team__list--mobile {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+
+    @include tablets {
+        display: flex;
+        padding: 0 10%;
+    }
+}
+

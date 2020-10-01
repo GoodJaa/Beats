@@ -1,0 +1,44 @@
+.interactive-avatar {
+    width: rem(76px);
+    height: rem(76px);
+    border: rem(6px) solid transparent;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+
+    &:hover {
+        border-color: $red;
+    }
+
+    &.active {
+        border-color: $red;
+    }
+
+    @include tablets {
+        width: rem(70px);
+        height: rem(70px);
+        border-width: rem(5px);
+    }
+
+    @include phones {
+        width: rem(64px);
+        height: rem(64px);
+        border-width: rem(4px);
+    }
+}
+
+.interactive-avatar__link {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: block;
+}
+
+.interactive-avatar__img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}

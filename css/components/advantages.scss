@@ -1,0 +1,17 @@
+.preview__foot {
+    @include tablets {
+        display: none;
+    }
+}
+
+.advantages {
+    display: flex;
+}
+
+.advantages__item {
+    margin-right: rem(30px);
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
