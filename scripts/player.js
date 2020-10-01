@@ -1,13 +1,12 @@
 // video player
 
-; (function () {
+
     let player;
 
     const playerBlock = $('.player');
 
     let eventsInit = () => {
         $(".player__start-btn").click(e => {
-            e.preventDefault();
 
             playerBlock.addClass("active");
 
@@ -119,4 +118,3 @@
             }
         });
     }
-})()
